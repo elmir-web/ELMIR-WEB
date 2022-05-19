@@ -1,0 +1,35 @@
+.Footer {
+  .container {
+    margin-top: 35px;
+    margin-bottom: 50px;
+  }
+
+  &__content {
+    height: 46px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 30px;
+  }
+
+  &__createdBy {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: -0.5px;
+
+    span:nth-child(1) {
+      color: #959595;
+    }
+
+    span:nth-child(2) {
+      color: #ececec;
+    }
+  }
+
+  &__contacts {
+  }
+}

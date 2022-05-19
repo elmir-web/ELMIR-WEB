@@ -1,0 +1,167 @@
+.FourthScreen {
+  background-color: #ffffff;
+
+  &__content {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__educations {
+    width: 595px;
+  }
+
+  &__experience {
+    width: 595px;
+  }
+
+  &__title-edu {
+    width: 269px;
+
+    background-image: url("./../../images/FourthScreen/education-title-icon.svg");
+    background-repeat: no-repeat;
+    background-position: top 50% left 0%;
+
+    text-align: right;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+
+    color: #000000;
+  }
+
+  &__educations-items {
+    margin-top: 30px;
+  }
+
+  &__educations-item {
+    margin-top: 20px;
+
+    h3 {
+      background-image: url("./../../images/FourthScreen/item-link-arrow.svg");
+      background-repeat: no-repeat;
+      background-position: right 0 top 50%;
+
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 26px;
+
+      color: #000000;
+    }
+  }
+
+  &__educations-item-bottom {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__educations-faculty {
+    width: 74.32432432432432%;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &__educations-dates {
+    width: 24.49324324324324%;
+    text-align: right;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &__title-exp {
+    width: 269px;
+
+    background-image: url("./../../images/FourthScreen/experience-title-icon.svg");
+    background-repeat: no-repeat;
+    background-position: top 50% left 0%;
+
+    text-align: right;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+
+    color: #000000;
+  }
+
+  &__experience-items {
+    margin-top: 30px;
+  }
+
+  &__experience-item.mmsk {
+    background-image: url("./../../images/FourthScreen/work-mmsk-icon.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &__experience-item.other {
+    background-image: url("./../../images/FourthScreen/work-other-icon.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &__experience-item {
+    margin-top: 20px;
+
+    h3 {
+      margin-left: 65px;
+      background-image: url("./../../images/FourthScreen/item-link-arrow.svg");
+      background-repeat: no-repeat;
+      background-position: right 0 top 0;
+
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+
+      color: #000000;
+    }
+  }
+
+  &__experience-item-bottom {
+    margin-left: 65px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__experience-position {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &__experience-dates {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: rgba(0, 0, 0, 0.6);
+  }
+}
