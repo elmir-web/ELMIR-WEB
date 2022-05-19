@@ -1,0 +1,20 @@
+.SecondScreen {
+  background-color: #ffffff;
+
+  &__content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__owner-avatar {
+    width: 435px;
+    height: 658px;
+  }
+
+  &__owner-image {
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,90 @@
+.FirstScreen {
+  .container {
+    position: relative;
+  }
+
+  &__content {
+    height: 512px;
+    width: 100%;
+    margin-top: 130px;
+    margin-bottom: 50px;
+  }
+
+  &__hello {
+    margin-left: 7px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #f9f5ff;
+  }
+
+  &__profession-p1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 130px;
+    line-height: 157px;
+
+    color: #f9f5ff;
+  }
+
+  &__profession-p2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 169px;
+    letter-spacing: 0.0492857em;
+
+    color: #f9f5ff;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &__profdesc {
+    width: 264px;
+    height: 58px;
+    position: absolute;
+    top: 79px;
+    left: 846px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+
+    color: #878787;
+  }
+
+  &__buttons {
+    margin-top: 75px;
+    height: 82px;
+  }
+
+  &__button-getproject {
+    width: 180px;
+    height: 82px;
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    text-align: left;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 48px;
+
+    background-image: url("./../../images/FirstScreen/button-getproject.svg");
+    background-repeat: no-repeat;
+    background-position: top 42px left 130px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+}

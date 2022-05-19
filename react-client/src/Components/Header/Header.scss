@@ -1,0 +1,40 @@
+.Header {
+  height: 110px;
+
+  padding-bottom: 10px;
+
+  &__wrapper {
+    height: 65px;
+    margin-top: 35px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+  }
+
+  &__nav {
+    margin-top: 6px;
+    width: 379.13px;
+    height: 18px;
+  }
+
+  &__nav-lists {
+    display: flex;
+    justify-content: space-between;
+    width: 379.13px;
+    height: 18px;
+  }
+
+  &__nav-list-item {
+    list-style-type: none;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #f9f5ff;
+  }
+}
