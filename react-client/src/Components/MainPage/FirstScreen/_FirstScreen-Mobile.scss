@@ -1,0 +1,98 @@
+@media (max-width: 768px) {
+  .FirstScreen {
+    .container {
+    }
+
+    &__content {
+      height: fit-content;
+      margin-top: 8.891213389121339vh;
+    }
+
+    &__hello {
+      margin-left: 2.2px;
+
+      font-style: normal;
+      font-weight: 500;
+      font-size: 2.5vw;
+      line-height: 100%;
+
+      color: #f9f5ff;
+    }
+
+    &__profession-p1 {
+      margin-top: 0.5vw;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 7.5vw;
+      line-height: 100%;
+
+      color: #f9f5ff;
+    }
+
+    &__profession-p2 {
+      margin-top: 0.5vw;
+      font-style: normal;
+      font-weight: 700;
+      text-align: left;
+      height: 10.61111111111111vw;
+      font-size: 10.61111111111111vw;
+      line-height: 46px;
+      letter-spacing: 0.0492857em;
+
+      color: #f9f5ff;
+    }
+
+    &__profdesc {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 5.277777777777778vw;
+      line-height: 120%;
+
+      color: #878787;
+
+      position: absolute;
+      top: 154px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 62.95264623955432vw;
+      height: fit-content;
+    }
+
+    &__buttons {
+      margin-top: 26vh;
+      height: 38px;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__button-getproject {
+      width: 214px;
+      height: 38px;
+      background-color: inherit;
+      border: none;
+      border-bottom: 1px solid #ffffff;
+      text-align: left;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 20px;
+      padding-right: 67px;
+
+      background-image: url("./../../../images/FirstScreen/button-getproject.svg");
+      background-repeat: no-repeat;
+      background-position: top 9px left 165px;
+
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 120%;
+
+      text-transform: uppercase;
+
+      color: #ffffff;
+    }
+
+    &__button-getproject-br {
+      display: none;
+    }
+  }
+}

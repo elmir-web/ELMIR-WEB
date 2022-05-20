@@ -1,4 +1,6 @@
 .Footer {
+  background-color: #0a0119;
+
   .container {
     margin-top: 35px;
     margin-bottom: 50px;
@@ -8,6 +10,8 @@
     height: 46px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__createdBy {
@@ -31,5 +35,22 @@
   }
 
   &__contacts {
+    width: 325px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15.619px;
+    line-height: 19px;
+    display: flex;
+    justify-content: space-between;
+
+    color: #f9f5ff;
+
+    span:nth-child(1) {
+      display: block;
+    }
+
+    span:nth-child(2) {
+      display: block;
+    }
   }
 }

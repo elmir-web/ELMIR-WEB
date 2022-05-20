@@ -17,8 +17,8 @@ const FirstScreen = () => {
 
           <div className="FirstScreen__buttons">
             <button className="FirstScreen__button-getproject">
-              Хочу
-              <br />
+              Хочу&nbsp;
+              <br className="FirstScreen__button-getproject-br" />
               проект
             </button>
           </div>

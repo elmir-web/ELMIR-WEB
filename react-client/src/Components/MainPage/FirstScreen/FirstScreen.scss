@@ -6,7 +6,7 @@
   &__content {
     height: 512px;
     width: 100%;
-    margin-top: 130px;
+    margin-top: 95px;
     margin-bottom: 50px;
   }
 
@@ -28,6 +28,10 @@
     line-height: 157px;
 
     color: #f9f5ff;
+
+    @media (max-width: 1210px) {
+      font-size: 10.7973vw;
+    }
   }
 
   &__profession-p2 {
@@ -40,14 +44,21 @@
     color: #f9f5ff;
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    @media (max-width: 1210px) {
+      font-size: 11.5vw;
+    }
+    @media (max-width: 1199px) {
+      font-size: 10.64vw;
+    }
   }
 
   &__profdesc {
     width: 264px;
     height: 58px;
     position: absolute;
-    top: 79px;
-    left: 846px;
+    top: 15.4296875%;
+    left: 70.5%;
 
     font-style: normal;
     font-weight: 400;
@@ -55,6 +66,13 @@
     line-height: 120%;
 
     color: #878787;
+
+    @media (max-width: 890px) {
+      position: absolute;
+      top: 388px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   &__buttons {
@@ -75,7 +93,7 @@
     padding-right: 48px;
     outline: none;
 
-    background-image: url("./../../images/FirstScreen/button-getproject.svg");
+    background-image: url("./../../../images/FirstScreen/button-getproject.svg");
     background-repeat: no-repeat;
     background-position: top 42px left 130px;
 
@@ -89,3 +107,5 @@
     color: #ffffff;
   }
 }
+
+@import "./_FirstScreen-Mobile";

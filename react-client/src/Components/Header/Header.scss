@@ -20,6 +20,10 @@
     height: 18px;
   }
 
+  &__nav-mobile {
+    display: none;
+  }
+
   &__nav-lists {
     display: flex;
     justify-content: space-between;
@@ -36,5 +40,12 @@
     line-height: 18px;
 
     color: #f9f5ff;
+
+    a {
+      color: #f9f5ff;
+      text-decoration: none;
+    }
   }
 }
+
+@import "./_Header-Mobile";

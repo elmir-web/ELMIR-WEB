@@ -1,0 +1,24 @@
+.MainPage {
+  font-family: "Inter", sans-serif;
+
+  background-color: #1c1c1c;
+  background-image: url("./../../images/FirstScreen/abstract-background.png");
+  background-repeat: no-repeat;
+  background-position: center 0;
+
+  position: relative;
+
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 1200px) {
+      width: 1200px;
+    }
+    @media (max-width: 1199px) {
+      width: 91.66666666666667%;
+    }
+  }
+}
+
+@import "./_MainPage-Mobile";

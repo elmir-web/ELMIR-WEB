@@ -2,7 +2,7 @@ import React from "react";
 
 import "./ThirdScreen.scss";
 
-import projectImage from "./../../images/ThirdScreen/image-project.png";
+import projectImage from "./../../../images/ThirdScreen/image-project.png";
 
 const ThirdScreen = () => {
   return (

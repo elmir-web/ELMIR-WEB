@@ -1,0 +1,50 @@
+@media (max-width: 768px) {
+  .Header {
+    height: 45px;
+
+    padding-bottom: 0;
+
+    &__wrapper {
+      height: 45px;
+      margin-top: 15px;
+    }
+
+    &__logo {
+    }
+
+    &__nav {
+      margin-top: 3px;
+      width: fit-content;
+      height: 24px;
+    }
+
+    &__nav-mobile {
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-color: inherit;
+      outline: none;
+      border: none;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      &:hover {
+        margin-top: -3px;
+        img {
+          width: 130%;
+          height: 130%;
+        }
+      }
+    }
+
+    &__nav-lists {
+      display: none;
+    }
+
+    &__nav-list-item {
+    }
+  }
+}

@@ -2,7 +2,7 @@ import React from "react";
 
 import "./SecondScreen.scss";
 
-import ownerImageAvatar from "./../../images/SecondScreen/Owner-Image.png";
+import ownerImageAvatar from "./../../../images/SecondScreen/Owner-Image.png";
 
 const SecondScreen = () => {
   return (
