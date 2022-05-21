@@ -1,0 +1,30 @@
+@media (max-width: 768px) {
+  .Footer {
+    .container {
+    }
+
+    &__content {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 15px;
+      padding-bottom: 50px;
+    }
+
+    &__createdBy {
+      span:nth-child(1) {
+      }
+
+      span:nth-child(2) {
+      }
+    }
+
+    &__contacts {
+      margin-top: 25px;
+      span:nth-child(1) {
+      }
+
+      span:nth-child(2) {
+      }
+    }
+  }
+}

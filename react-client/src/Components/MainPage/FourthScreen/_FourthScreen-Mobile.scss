@@ -1,0 +1,79 @@
+@media (max-width: 768px) {
+  .FourthScreen {
+    &__content {
+      width: 100%;
+      margin-top: 59px;
+      margin-bottom: 59px;
+      flex-direction: column;
+    }
+
+    &__educations {
+      width: 100%;
+    }
+
+    &__experience {
+      margin-top: 60px;
+      width: 100%;
+    }
+
+    &__title-edu {
+    }
+
+    &__educations-items {
+    }
+
+    &__educations-item {
+      h3 {
+        width: 100%;
+      }
+    }
+
+    &__educations-item-bottom {
+    }
+
+    &__educations-faculty {
+    }
+
+    &__educations-dates {
+      width: 29.42424242424242%;
+      flex-shrink: 0;
+      flex-grow: 0;
+    }
+
+    &__title-exp {
+    }
+
+    &__experience-items {
+    }
+
+    &__experience-item.mmsk {
+    }
+
+    &__experience-item.other {
+    }
+
+    &__experience-item {
+      h3 {
+        width: 80.3030303030303%;
+        background-image: none;
+      }
+    }
+
+    &__experience-item-bottom {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__experience-position {
+    }
+
+    &__experience-dates {
+      margin-top: 10px;
+
+      background-image: url("./../../../images/FourthScreen/item-link-arrow.svg");
+      background-repeat: no-repeat;
+      background-position: right 0 top 0;
+    }
+  }
+}

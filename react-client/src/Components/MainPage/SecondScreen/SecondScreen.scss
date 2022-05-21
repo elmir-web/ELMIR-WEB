@@ -1,14 +1,17 @@
 .SecondScreen {
   background-color: #ffffff;
+  border-top: 1px solid rgba(255, 255, 255, 0);
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
 
   &__content {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 99px;
+    margin-bottom: 99px;
     display: flex;
     justify-content: space-between;
   }
 
   &__owner-avatar {
+    flex-shrink: 0;
     width: 435px;
     height: 658px;
   }
@@ -35,6 +38,10 @@
     letter-spacing: 2px;
 
     color: #ff8a56;
+
+    @media (max-width: 1200px) {
+      font-size: 4.6875vw;
+    }
   }
 
   &__description-activity {
@@ -49,6 +56,10 @@
     letter-spacing: 2px;
 
     color: #000000;
+
+    @media (max-width: 1200px) {
+      font-size: 4.5vw;
+    }
   }
 
   &__description-text {
@@ -59,16 +70,18 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 33px;
+    text-align: justify;
 
     color: #666666;
   }
 
   &__buttons {
     margin-top: 100px;
-    width: 428px;
+    max-width: 428px;
     height: 58px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   &__button-getme {
@@ -85,6 +98,10 @@
     line-height: 18px;
 
     color: #ffffff;
+
+    &:hover {
+      background-color: #ff8a56;
+    }
   }
 
   &__button-go-cv {
@@ -107,5 +124,12 @@
     line-height: 18px;
 
     color: #000000;
+
+    &:hover {
+      color: #ff8a56;
+      border-bottom: 1px solid #ff8a56;
+    }
   }
 }
+
+@import "./_SecondScreen-Mobile";

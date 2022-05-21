@@ -1,9 +1,18 @@
 .ThirdScreen {
   background-color: #0a0119;
+  border-top: 1px solid rgba(255, 255, 255, 0);
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
 
   .my-projects {
     display: flex;
     flex-direction: column;
+
+    .swiper {
+      width: 100%;
+
+      .swiper-slide {
+      }
+    }
 
     &__head {
       display: flex;
@@ -26,6 +35,10 @@
           background-image: url("./../../../images/ThirdScreen/button-slider-prev.svg");
           background-repeat: no-repeat;
           background-position: center;
+
+          &:hover {
+            background-color: #ff8a56;
+          }
         }
 
         &__next {
@@ -39,6 +52,10 @@
           background-image: url("./../../../images/ThirdScreen/button-slider-next.svg");
           background-repeat: no-repeat;
           background-position: center;
+
+          &:hover {
+            background-color: #ff8a56;
+          }
         }
       }
     }
@@ -68,12 +85,62 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+
+      &:hover {
+        cursor: pointer;
+
+        .my-projects__item-image-wrapper {
+          .my-projects__item-image-hover {
+            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button:hover {
+              cursor: pointer;
+              color: #000;
+              background-color: #fff;
+            }
+          }
+        }
+      }
     }
 
     &__item-image-wrapper {
       width: 385px;
       height: 385px;
       border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    &__item-image-hover {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      background-color: rgba(10, 1, 25, 0.6);
+
+      button {
+        background-color: inherit;
+        border: 0.867725px solid #f6f6fe;
+        border-radius: 3.4709px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 7px;
+        padding-right: 7px;
+
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+
+        color: #fafbff;
+      }
     }
 
     &__item-title {
@@ -91,7 +158,11 @@
     }
 
     &__item-tech {
-      width: 53.88px;
+      padding-top: 3.47px;
+      padding-bottom: 3.47px;
+      padding-left: 6.94px;
+      padding-right: 6.94px;
+      width: fit-content;
       height: 23.94px;
       margin-left: 10px;
       border: 0.867725px solid #f6f6fe;
@@ -135,6 +206,13 @@
       line-height: 18px;
 
       color: #ff8a56;
+
+      &:hover {
+        background-color: #ff8a56;
+        color: #fff;
+      }
     }
   }
 }
+
+@import "./_ThirdScreen-Mobile";

@@ -20,12 +20,12 @@ const FourthScreen = () => {
                   </div>
 
                   <div className="FourthScreen__educations-dates">
-                    &bull; 2018 - по наст. вр.
+                    &bull; 2018 -&nbsp;по наст. вр.
                   </div>
                 </div>
               </div>
 
-              <div className="FourthScreen__educations-item">
+              {/* <div className="FourthScreen__educations-item">
                 <h3>Другое название</h3>
 
                 <div className="FourthScreen__educations-item-bottom">
@@ -34,10 +34,10 @@ const FourthScreen = () => {
                   </div>
 
                   <div className="FourthScreen__educations-dates">
-                    &bull; ГГГГ - ГГГГ.
+                    &bull; ГГГГ -&nbsp;ГГГГ.
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -59,7 +59,7 @@ const FourthScreen = () => {
                 </div>
               </div>
 
-              <div className="FourthScreen__experience-item other">
+              {/* <div className="FourthScreen__experience-item other">
                 <h3>Название компании</h3>
 
                 <div className="FourthScreen__experience-item-bottom">
@@ -71,7 +71,7 @@ const FourthScreen = () => {
                     &bull; Месяц ГГГГ - Месяц ГГГГ
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

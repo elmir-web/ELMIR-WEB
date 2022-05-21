@@ -4,7 +4,7 @@ import "./SecondScreen.scss";
 
 import ownerImageAvatar from "./../../../images/SecondScreen/Owner-Image.png";
 
-const SecondScreen = () => {
+const SecondScreen = ({ buttonGoToContacts, buttonGoToCV }) => {
   return (
     <div className="SecondScreen">
       <div className="container">
@@ -32,11 +32,17 @@ const SecondScreen = () => {
             </p>
 
             <div className="SecondScreen__buttons">
-              <button className="SecondScreen__button-getme">
+              <button
+                className="SecondScreen__button-getme"
+                onClick={buttonGoToContacts}
+              >
                 Связаться со мной
               </button>
 
-              <button className="SecondScreen__button-go-cv">
+              <button
+                className="SecondScreen__button-go-cv"
+                onClick={buttonGoToCV}
+              >
                 К моему резюме
               </button>
             </div>

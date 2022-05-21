@@ -2,7 +2,7 @@ import React from "react";
 
 import "./FirstScreen.scss";
 
-const FirstScreen = () => {
+const FirstScreen = ({ buttonGoToContacts }) => {
   return (
     <div className="FirstScreen">
       <div className="container">
@@ -16,7 +16,10 @@ const FirstScreen = () => {
           </div>
 
           <div className="FirstScreen__buttons">
-            <button className="FirstScreen__button-getproject">
+            <button
+              className="FirstScreen__button-getproject"
+              onClick={buttonGoToContacts}
+            >
               Хочу&nbsp;
               <br className="FirstScreen__button-getproject-br" />
               проект

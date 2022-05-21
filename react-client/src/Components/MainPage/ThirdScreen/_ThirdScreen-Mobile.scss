@@ -1,0 +1,90 @@
+@media (max-width: 768px) {
+  .ThirdScreen {
+    .my-projects {
+      .swiper {
+        .swiper-slide {
+        }
+      }
+
+      &__head {
+        justify-content: center;
+
+        .control-buttons {
+          display: none;
+
+          &__prev {
+          }
+
+          &__next {
+          }
+        }
+      }
+
+      &__title {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 38.2px;
+        line-height: 100%;
+
+        letter-spacing: 2px;
+
+        color: #ff8a56;
+      }
+
+      &__wrapper {
+      }
+
+      &__item {
+        width: 330px;
+        height: 410px;
+      }
+
+      &__item-image-wrapper {
+        width: 330px;
+        height: 330px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &__item-title {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+
+        color: #fafbff;
+      }
+
+      &__item-techs {
+      }
+
+      &__item-tech {
+        &:first-child {
+        }
+      }
+
+      &__buttons {
+      }
+
+      &__button-portfolio {
+        width: 214px;
+        height: 38px;
+
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+
+        text-transform: uppercase;
+
+        color: #ff8a56;
+      }
+    }
+  }
+}

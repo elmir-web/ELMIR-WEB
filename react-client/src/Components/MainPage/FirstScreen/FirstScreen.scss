@@ -105,6 +105,11 @@
     text-transform: uppercase;
 
     color: #ffffff;
+
+    &:hover {
+      color: #ff8a56;
+      border-bottom: 1px solid #ff8a56;
+    }
   }
 }
 

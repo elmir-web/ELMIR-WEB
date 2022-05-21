@@ -1,9 +1,11 @@
 .Footer {
   background-color: #0a0119;
+  border-top: 1px solid rgba(255, 255, 255, 0);
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
 
   .container {
-    margin-top: 35px;
-    margin-bottom: 50px;
+    margin-top: 34px;
+    margin-bottom: 49px;
   }
 
   &__content {
@@ -54,3 +56,5 @@
     }
   }
 }
+
+@import "./_Footer-Mobile";

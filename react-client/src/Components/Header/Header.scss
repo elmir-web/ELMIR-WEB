@@ -44,6 +44,11 @@
     a {
       color: #f9f5ff;
       text-decoration: none;
+
+      &:hover {
+        color: #ff8a56;
+        border-bottom: 1px solid #fff;
+      }
     }
   }
 }

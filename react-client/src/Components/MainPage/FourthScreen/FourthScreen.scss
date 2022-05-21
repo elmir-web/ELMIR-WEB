@@ -1,30 +1,31 @@
 .FourthScreen {
   background-color: #ffffff;
+  border-top: 1px solid rgba(255, 255, 255, 0);
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
 
   &__content {
     width: 100%;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 99px;
+    margin-bottom: 99px;
     display: flex;
     justify-content: space-between;
   }
 
   &__educations {
-    width: 595px;
+    width: 49.58333333333333%;
   }
 
   &__experience {
-    width: 595px;
+    width: 49.58333333333333%;
   }
 
   &__title-edu {
-    width: 269px;
-
     background-image: url("./../../../images/FourthScreen/education-title-icon.svg");
     background-repeat: no-repeat;
     background-position: top 50% left 0%;
 
-    text-align: right;
+    padding-left: 40px;
+    text-align: left;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
@@ -44,8 +45,10 @@
     h3 {
       background-image: url("./../../../images/FourthScreen/item-link-arrow.svg");
       background-repeat: no-repeat;
-      background-position: right 0 top 50%;
+      background-position: right 0 top 0;
 
+      width: 93.27731092436975%;
+      padding-right: 40px;
       font-family: "Roboto";
       font-style: normal;
       font-weight: 700;
@@ -76,6 +79,7 @@
 
   &__educations-dates {
     width: 24.49324324324324%;
+    flex-shrink: 0;
     text-align: right;
 
     font-family: "Roboto";
@@ -88,13 +92,12 @@
   }
 
   &__title-exp {
-    width: 269px;
-
     background-image: url("./../../../images/FourthScreen/experience-title-icon.svg");
     background-repeat: no-repeat;
     background-position: top 50% left 0%;
 
-    text-align: right;
+    padding-left: 40px;
+    text-align: left;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
@@ -125,10 +128,12 @@
 
     h3 {
       margin-left: 65px;
+      padding-right: 40px;
       background-image: url("./../../../images/FourthScreen/item-link-arrow.svg");
       background-repeat: no-repeat;
       background-position: right 0 top 0;
 
+      width: 82.35294117647059%;
       font-family: "Roboto";
       font-style: normal;
       font-weight: 700;
@@ -165,3 +170,5 @@
     color: rgba(0, 0, 0, 0.6);
   }
 }
+
+@import "./_FourthScreen-Mobile";

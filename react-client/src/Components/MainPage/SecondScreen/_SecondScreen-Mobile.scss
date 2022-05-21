@@ -1,0 +1,87 @@
+@media (max-width: 768px) {
+  .SecondScreen {
+    &__content {
+      margin-top: 59px;
+      margin-bottom: 59px;
+      flex-direction: column;
+    }
+
+    &__owner-avatar {
+      flex-shrink: 1;
+      width: 79.6969696969697%;
+      height: fit-content;
+      align-self: center;
+    }
+
+    &__owner-image {
+    }
+
+    &__description {
+      width: 100%;
+      height: fit-content;
+      padding-bottom: 0;
+      padding-top: 0;
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__description-name {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 38.2px;
+      line-height: 100%;
+      text-align: center;
+
+      letter-spacing: 2px;
+
+      color: #ff8a56;
+    }
+
+    &__description-activity {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 21.663998px;
+      line-height: 100%;
+      text-align: center;
+
+      letter-spacing: 2px;
+
+      color: #000000;
+    }
+
+    &__description-text {
+      margin-top: 50px;
+
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 33px;
+      text-align: left;
+
+      color: #666666;
+    }
+
+    &__buttons {
+      width: 100%;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      min-height: 110px;
+      align-self: center;
+    }
+
+    &__button-getme {
+      width: 100%;
+      height: 60px;
+    }
+
+    &__button-go-cv {
+      flex-shrink: 0;
+      width: 165.33px;
+      align-self: center;
+    }
+  }
+}
