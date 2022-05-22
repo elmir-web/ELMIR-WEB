@@ -3,4 +3,18 @@
 
   display: flex;
   flex-direction: column;
+
+  font-family: "Inter", sans-serif;
+
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 1200px) {
+      width: 1200px;
+    }
+    @media (max-width: 1199px) {
+      width: 91.66666666666667%;
+    }
+  }
 }

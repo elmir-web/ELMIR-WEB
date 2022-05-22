@@ -1,0 +1,63 @@
+@media (max-width: 768px) {
+  .Portfolio {
+    &__content {
+      h2 {
+      }
+
+      .my-projects {
+        &__item {
+          width: 330px;
+          height: 410px;
+
+          :nth-child(-n + 3) {
+          }
+
+          &:hover {
+            .my-projects__item-image-wrapper {
+              .my-projects__item-image-hover {
+                button:hover {
+                }
+              }
+            }
+          }
+        }
+
+        &__item-image-wrapper {
+          width: 330px;
+          height: 330px;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        &__item-image-hover {
+          button {
+          }
+        }
+
+        &__item-title {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 24px;
+
+          color: #fafbff;
+        }
+
+        &__item-techs {
+        }
+
+        &__item-tech {
+          &:first-child {
+          }
+        }
+      }
+    }
+
+    &__allProjects {
+    }
+  }
+}

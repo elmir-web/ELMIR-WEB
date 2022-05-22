@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 import "./MainPage.scss";
 
@@ -11,11 +10,16 @@ import ThirdScreen from "./ThirdScreen/ThirdScreen";
 import FourthScreen from "./FourthScreen/FourthScreen";
 import Footer from "./../Footer/Footer";
 
-const MainPage = ({ projectsArray }) => {
-  const [statusMobileNav, setStatusMobileNav] = useState(false);
-
-  let navigate = useNavigate();
-
+const MainPage = ({
+  statusMobileNav,
+  setStatusMobileNav,
+  projectsArray,
+  setSelectedProject,
+  buttonGoToPortfolio,
+  buttonGoToContacts,
+  buttonGoToCV,
+  buttonGoToProject,
+}) => {
   window.addEventListener(
     `resize`,
     (event) => {
@@ -25,22 +29,6 @@ const MainPage = ({ projectsArray }) => {
     },
     false
   );
-
-  const buttonGoToContacts = () => {
-    navigate("/contacts");
-  };
-
-  const buttonGoToCV = () => {
-    navigate("/cv");
-  };
-
-  const buttonGoToPortfolio = () => {
-    navigate("/portfolio");
-  };
-
-  const buttonGoToProject = (project) => {
-    navigate(`/portfolio/${project.projectLink}`);
-  };
 
   return (
     <div className="MainPage">

@@ -1,26 +1,89 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 import "./ProjectSelected.scss";
 
-const ProjectSelected = ({ projectsArray }) => {
+import Header from "./../../Header/Header";
+import Footer from "../../Footer/Footer";
+import NavMobile from "./../../Header/NavMobile/NavMobile";
+
+const ProjectSelected = ({
+  statusMobileNav,
+  setStatusMobileNav,
+  projectsArray,
+  portfolioProjectSelect,
+  setSelectedProject,
+  buttonGoToPortfolio,
+}) => {
   let projectSelected = useParams();
+
+  useEffect(() => {
+    if (portfolioProjectSelect === null) {
+      for (let index = 0; index < projectsArray.length; index++) {
+        if (
+          projectsArray[index].projectLink === projectSelected.projectSelected
+        ) {
+          setSelectedProject(projectsArray[index]); // portfolioProjectSelect
+        }
+      }
+    }
+  }, []);
+
+  window.addEventListener(
+    `resize`,
+    (event) => {
+      if (window.innerWidth > 768 && statusMobileNav === true) {
+        setStatusMobileNav(false);
+      }
+    },
+    false
+  );
 
   return (
     <div className="ProjectSelected">
-      ProjectSelected (
-      {projectsArray.map((project, index) => {
-        if (project.projectLink === projectSelected.projectSelected)
-          return <span key={index}>{project.projectName}</span>;
-      })}
-      )
-      <a
-        href="https://www.figma.com/file/ZDBtTU1yPA5Yr7XXootWhr/ELMIR-WEB?node-id=27%3A2"
-        target="_blank"
-      >
-        Пока можешь посмотреть на макет, ведь пока эта страница появится -
-        пройдет какое-количество времени:)
-      </a>
+      <Header
+        statusMobileNav={statusMobileNav}
+        setStatusMobileNav={setStatusMobileNav}
+      />
+
+      {statusMobileNav === true ? <NavMobile /> : ""}
+
+      <div className="container">
+        <div className="ProjectSelected__content">
+          <h2>Проект: {portfolioProjectSelect?.projectName}</h2>
+
+          <div className="ProjectSelected__description">
+            <div className="ProjectSelected__description-image">
+              <img src={portfolioProjectSelect?.projectImage} alt="" />
+            </div>
+
+            <div className="ProjectSelected__item-techs">
+              {portfolioProjectSelect?.projectTechsArray?.map((tech, index) => {
+                return (
+                  <div key={index} className="ProjectSelected__item-tech">
+                    {tech}
+                  </div>
+                );
+              })}
+            </div>
+
+            <div className="ProjectSelected__description-text">
+              {portfolioProjectSelect?.descriptionText}
+            </div>
+          </div>
+
+          <div className="ProjectSelected__buttons">
+            <button
+              className="ProjectSelected__button-portfolio"
+              onClick={buttonGoToPortfolio}
+            >
+              Ко всем проектам
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <Footer />
     </div>
   );
 };

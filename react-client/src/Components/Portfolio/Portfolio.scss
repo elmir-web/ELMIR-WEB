@@ -1,2 +1,151 @@
 .Portfolio {
+  background-color: #1c1c1c;
+
+  &__content {
+    margin-top: 54px;
+    margin-bottom: 100px;
+
+    h2 {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 100%;
+
+      letter-spacing: 2px;
+
+      color: #ff8a56;
+      margin-bottom: 50px;
+    }
+
+    .my-projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px 22px;
+
+      &__item {
+        width: 385px;
+        height: 470px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        :nth-child(-n + 3) {
+        }
+
+        &:hover {
+          cursor: pointer;
+
+          .my-projects__item-image-wrapper {
+            .my-projects__item-image-hover {
+              display: block;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              button:hover {
+                cursor: pointer;
+                color: #000;
+                background-color: #fff;
+              }
+            }
+          }
+        }
+      }
+
+      &__item-image-wrapper {
+        width: 385px;
+        height: 385px;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &__item-image-hover {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        background-color: rgba(10, 1, 25, 0.6);
+
+        button {
+          background-color: inherit;
+          border: 0.867725px solid #f6f6fe;
+          border-radius: 3.4709px;
+          padding-top: 3px;
+          padding-bottom: 3px;
+          padding-left: 7px;
+          padding-right: 7px;
+
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+
+          color: #fafbff;
+        }
+      }
+
+      &__item-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+
+        color: #fafbff;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        height: 40px;
+        width: 100%;
+      }
+
+      &__item-techs {
+        height: 23.94px;
+        display: flex;
+      }
+
+      &__item-tech {
+        padding-top: 3.47px;
+        padding-bottom: 3.47px;
+        padding-left: 6.94px;
+        padding-right: 6.94px;
+        width: fit-content;
+        height: 23.94px;
+        margin-left: 10px;
+        border: 0.867725px solid #f6f6fe;
+        border-radius: 3.4709px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+
+        color: #fafbff;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  &__allProjects {
+  }
 }
+
+@import "./_Portfolio-Mobile";
