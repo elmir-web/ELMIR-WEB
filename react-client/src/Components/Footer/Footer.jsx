@@ -12,9 +12,12 @@ const Footer = () => {
           </div>
 
           <div className="Footer__contacts">
-            <span>8 (986) 778-41-01</span>
-            {/* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
-            <span>elmir.web@gmail.com</span>
+            <span onClick={() => window.open("tel:89867784101")}>
+              8 (986) 778-41-01
+            </span>
+            <span onClick={() => window.open("mailto:elmir.web@gmail.com")}>
+              elmir.web@gmail.com
+            </span>
           </div>
         </div>
       </div>

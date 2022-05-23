@@ -1,0 +1,144 @@
+.CV {
+  background-color: #1c1c1c;
+
+  &__content {
+    margin-top: 54px;
+    margin-bottom: 100px;
+  }
+
+  &__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+
+    letter-spacing: 2px;
+
+    color: #ff8a56;
+  }
+
+  &__ownerName {
+    margin-top: 50px;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 2px;
+
+    color: #ffffff;
+  }
+
+  &__contentWrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__contentLeft {
+    width: 64.16666666666667%;
+  }
+
+  &__contentRight {
+    width: 33.33333333333333%;
+  }
+
+  &__contentItem {
+    margin-top: 20px;
+  }
+
+  &__contentTitle {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 2px;
+
+    color: #ffffff;
+
+    border-bottom: 1px solid #73808d;
+  }
+
+  &__contentText {
+    margin-top: 12px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+
+    color: #ffffff;
+  }
+
+  &__contentText-topRow {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__contentText-position {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+
+    color: #ffffff;
+  }
+
+  &__contentText-job {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+
+    color: #ffffff;
+  }
+
+  &__contentText-topDate {
+    margin-top: 12px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 100;
+    font-size: 22px;
+    line-height: 26px;
+
+    color: #ffffff;
+  }
+
+  &__buttons {
+    height: 60px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button-contacts {
+    width: 220px;
+    height: 60px;
+    background-color: inherit;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ff8a56;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+
+    color: #ff8a56;
+
+    &:hover {
+      background-color: #ff8a56;
+      color: #fff;
+    }
+  }
+}
+
+@import "./_CV-Mobile";

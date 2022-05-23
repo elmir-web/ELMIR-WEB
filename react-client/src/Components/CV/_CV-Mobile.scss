@@ -1,0 +1,54 @@
+@media (max-width: 768px) {
+  .CV {
+    &__content {
+    }
+
+    &__title {
+    }
+
+    &__ownerName {
+    }
+
+    &__contentWrapper {
+      flex-direction: column;
+    }
+
+    &__contentLeft {
+      width: 100%;
+    }
+
+    &__contentRight {
+      margin-top: 100px;
+      width: 100%;
+    }
+
+    &__contentItem {
+    }
+
+    &__contentTitle {
+    }
+
+    &__contentText {
+    }
+
+    &__contentText-topRow {
+    }
+
+    &__contentText-position {
+    }
+
+    &__contentText-job {
+    }
+
+    &__contentText-topDate {
+    }
+
+    &__buttons {
+    }
+
+    &__button-contacts {
+      &:hover {
+      }
+    }
+  }
+}

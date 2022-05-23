@@ -6,6 +6,8 @@ import "./App.scss";
 import MainPage from "./MainPage/MainPage";
 import Portfolio from "./Portfolio/Portfolio";
 import ProjectSelected from "./Portfolio/ProjectSelected/ProjectSelected";
+import Contacts from "./Contacts/Contacts";
+import CV from "./CV/CV";
 
 import projectImageELMIRWEBFULLSTACK from "./../images/ThirdScreen/1.ELMIR-WEB-PERSONAL-FULLSTACK.png";
 import projectImageELMIRFILMS from "./../images/ThirdScreen/2.ELMIR-FILMS-FRONTEND.png";
@@ -80,31 +82,20 @@ function App() {
         <Route
           path="/cv"
           element={
-            <div>
-              Тут будет резюме{" "}
-              <a
-                href="https://www.figma.com/file/ZDBtTU1yPA5Yr7XXootWhr/ELMIR-WEB?node-id=27%3A2"
-                target="_blank"
-              >
-                Пока можешь посмотреть на макет, ведь пока эта страница появится
-                - пройдет какое-количество времени:)
-              </a>
-            </div>
+            <CV
+              statusMobileNav={statusMobileNav}
+              setStatusMobileNav={setStatusMobileNav}
+              buttonGoToContacts={buttonGoToContacts}
+            />
           }
         />
         <Route
           path="/contacts"
           element={
-            <div>
-              Тут будут контакты
-              <a
-                href="https://www.figma.com/file/ZDBtTU1yPA5Yr7XXootWhr/ELMIR-WEB?node-id=27%3A2"
-                target="_blank"
-              >
-                Пока можешь посмотреть на макет, ведь пока эта страница появится
-                - пройдет какое-количество времени:)
-              </a>
-            </div>
+            <Contacts
+              statusMobileNav={statusMobileNav}
+              setStatusMobileNav={setStatusMobileNav}
+            />
           }
         />
         <Route

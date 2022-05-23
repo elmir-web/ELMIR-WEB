@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+  .Contacts {
+    &__content {
+      flex-direction: column;
+    }
+
+    &__contactsData,
+    &__techsData {
+      width: 100%;
+
+      h2 {
+      }
+    }
+
+    &__contactsData-wrapper,
+    &__techsData-wrapper {
+    }
+    &__contactsData-item,
+    &__techsData-item {
+    }
+  }
+}

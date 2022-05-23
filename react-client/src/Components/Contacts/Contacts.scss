@@ -1,0 +1,55 @@
+.Contacts {
+  background-color: #1c1c1c;
+
+  &__content {
+    margin-top: 54px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+  }
+
+  &__contactsData,
+  &__techsData {
+    width: 505px;
+
+    h2 {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 100%;
+
+      letter-spacing: 2px;
+
+      color: #ff8a56;
+    }
+  }
+
+  &__contactsData-wrapper,
+  &__techsData-wrapper {
+    margin-top: 50px;
+  }
+  &__contactsData-item,
+  &__techsData-item {
+    background-image: url("./../../images/Contacts/arrow-link.png");
+    background-repeat: no-repeat;
+    background-position: top 000000 right 0;
+
+    padding-right: 5.050505050505051%;
+
+    margin-top: 22px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 2px;
+
+    color: #ffffff;
+
+    cursor: pointer;
+  }
+}
+
+@import "./_Contacts-Mobile";

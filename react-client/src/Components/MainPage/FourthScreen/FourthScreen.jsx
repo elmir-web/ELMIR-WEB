@@ -12,7 +12,9 @@ const FourthScreen = () => {
 
             <div className="FourthScreen__educations-items">
               <div className="FourthScreen__educations-item">
-                <h3>Оренбургский Государственный Университет</h3>
+                <h3 onClick={() => window.open("http://www.osu.ru/")}>
+                  Оренбургский Государственный Университет
+                </h3>
 
                 <div className="FourthScreen__educations-item-bottom">
                   <div className="FourthScreen__educations-faculty">
@@ -46,7 +48,9 @@ const FourthScreen = () => {
 
             <div className="FourthScreen__experience-items">
               <div className="FourthScreen__experience-item mmsk">
-                <h3>ООО “Медногорский медно-серный комбинат”</h3>
+                <h3 onClick={() => window.open("https://mmsk.ugmk.com/ru/")}>
+                  ООО “Медногорский медно-серный комбинат”
+                </h3>
 
                 <div className="FourthScreen__experience-item-bottom">
                   <div className="FourthScreen__experience-position">
