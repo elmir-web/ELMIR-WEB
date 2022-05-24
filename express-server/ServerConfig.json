@@ -1,0 +1,11 @@
+{
+  "SERVER_SECRET_KEY": "key_random_text",
+  "SERVER_START_ON_PORT": "8881",
+  "SERVER_WORKIN_ON_ADRESS": "http://localhost",
+  "SERVER_POSTGRESQL_SETTINGS": {
+    "host": "127.0.0.1",
+    "user": "root",
+    "database": "ogu-diplom",
+    "password": "root"
+  }
+}

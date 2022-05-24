@@ -2,16 +2,15 @@
   background-color: #0a0119;
   border-top: 1px solid rgba(255, 255, 255, 0);
   border-bottom: 1px solid rgba(255, 255, 255, 0);
+  position: relative;
 
   .my-projects {
+    z-index: 1;
     display: flex;
     flex-direction: column;
 
     .swiper {
       width: 100%;
-
-      .swiper-slide {
-      }
     }
 
     &__head {

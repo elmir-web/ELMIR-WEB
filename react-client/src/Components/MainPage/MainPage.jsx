@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import "./MainPage.scss";
 
@@ -13,7 +13,6 @@ import Footer from "./../Footer/Footer";
 const MainPage = ({
   statusMobileNav,
   setStatusMobileNav,
-  projectsArray,
   setSelectedProject,
   buttonGoToPortfolio,
   buttonGoToContacts,
@@ -37,7 +36,11 @@ const MainPage = ({
         setStatusMobileNav={setStatusMobileNav}
       />
 
-      {statusMobileNav === true ? <NavMobile /> : ""}
+      {statusMobileNav === true ? (
+        <NavMobile setStatusMobileNav={setStatusMobileNav} />
+      ) : (
+        ""
+      )}
 
       <FirstScreen buttonGoToContacts={buttonGoToContacts} />
       <SecondScreen
@@ -47,7 +50,6 @@ const MainPage = ({
       <ThirdScreen
         buttonGoToPortfolio={buttonGoToPortfolio}
         buttonGoToProject={buttonGoToProject}
-        projectsArray={projectsArray}
       />
       <FourthScreen />
       <Footer />
